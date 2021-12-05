@@ -27,7 +27,7 @@ box-sizing: border-box;
   grid-row-gap: 0px;
 
   border: solid 1px black;
-  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(background.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(background-resized.jpg);
   background-position: center;
   background-size: cover;
 
@@ -140,21 +140,21 @@ transform: scale(1.1); }
 
 .card1{
   grid-area: 4 / 8 / 7 / 10;
-  background-image: url(card1.jpg);
+  background-image: url(card1-resized.jpg);
   width: 200px;
   height: 200px;
 }
 
 .card2{
   grid-area: 4 / 10 / 7 / 12;
-  background-image: url(card2.png);
+  background-image: url(card2-resized.jpg);
   width: 200px;
   height: 200px;
 }
 
 .card3{
   grid-area: 7 / 9 / 10 / 11;
-  background-image: url(card3.png);
+  background-image: url(card3-resized.jpg);
   width: 200px;
   height: 200px;
 }
@@ -413,11 +413,7 @@ h6 {
 
 @media screen and (max-width: 650px) {
 
-.head{
-
-
-  background-color: red;
-}
+/*.head{  background-color: red; }*/
 
 h6 {
   font-size: 1.5em;
@@ -436,6 +432,21 @@ p{
 
   button{
     font-size: 0.5rem;
+  }
+
+  .card1{
+    width: 80px;
+    height: 80px;
+  }
+
+  .card2{
+    width: 80px;
+    height: 80px;
+  }
+
+  .card3{
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -504,9 +515,7 @@ p{
 <h6>Founders of the SIMBA team</h6>
 <div class = "about">
   <div class = "memb">
-    <div class = "memb_photo1">
       <img src="photo_gosling-resized.jpg" class="photo">
-    </div>
     <div class = "memb_name">
     Corentin J. Gosling<br>PhD
     </div>
@@ -516,9 +525,7 @@ p{
   </div>
 
   <div class = "memb">
-    <div class = "memb_photo2">
-      <img src="pinabiaux.png" class="photo">
-    </div>
+      <img src="pinabiaux-resized.jpg" class="photo">
     <div class = "memb_name">
     Charlotte Pinabiaux<br>PhD
     </div>
@@ -529,9 +536,7 @@ p{
 
 
   <div class = "memb">
-    <div class = "memb_photo3">
-      <img src="caparos.png" class="photo">
-    </div>
+      <img src="caparos-resized.jpg" class="photo">
     <div class = "memb_name">
     Serge Caparos<br>PhD
     </div>
@@ -541,10 +546,7 @@ p{
   </div>
 
   <div class = "memb">
-    <div class = "memb_photo3">
       <img src="photo_delorme-resized.jpg" class="photo">
-
-    </div>
     <div class = "memb_name">
     Richard Delorme<br>MD, PhD
     </div>
@@ -554,9 +556,7 @@ p{
   </div>
 
   <div class = "memb">
-    <div class = "memb_photo3">
       <img src="photo_cortese-resized.jpg" class="photo">
-    </div>
     <div class = "memb_name">
     Samuele Cortese<br>MD, PhD
     </div>
