@@ -14,12 +14,13 @@
 
  .content{
   height: 110vh;
-  min-height: 500px;
-  min-width: 350px;
   background-image: url(background.jpg);
   background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+   background-repeat: no-repeat;
   position: relative;
   background-color: rgb(47,73,108);
 
@@ -294,8 +295,6 @@ input[type=checkbox]:checked ~ .menu{
 
 
   h6 {
-    min-width: 350px;
-
     background: #5b718f;
     border-top: solid 1px #fff;
     font-size: 3em;
@@ -306,8 +305,6 @@ input[type=checkbox]:checked ~ .menu{
   
   }
   .about{
-    min-width: 350px;
-
     display: flex;
     /* grid-template-columns: repeat(5, 1fr); */
     justify-content: space-evenly;
@@ -346,10 +343,14 @@ input[type=checkbox]:checked ~ .menu{
   /* ---------------------------------------------FOOTER------------------------------------------------------*/
 
   .footer {
-    min-width: 350px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: flex-start; */
+    display: grid;
+    grid-template-columns: 25% 75%; /*fraction*/
+    
+    align-items: start;
+
     padding: 10px 20px;
     color: #000;
     background-color: #fff;
@@ -359,14 +360,24 @@ input[type=checkbox]:checked ~ .menu{
     /* background-color: rgba(0, 0, 0, 0.75); */
 
   }
-
+  .footer_left {
+    /* border: 1px solid red; */
+  }
+  .footer_mid{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+  /* .footer_right{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+} */
   .footer_logo {
     font-weight: 400;
     font-size: 1.5rem;
-  }
-  .footer_addr {
-    margin-right: 1.25em;
-    margin-bottom: 0em;
   }
   .footer address {
     color: #000;
@@ -394,45 +405,38 @@ input[type=checkbox]:checked ~ .menu{
   button:hover {
       background-position: left;
   }
-  
-  .footer_nav{
-    display: flex;
-    justify-content: center;
-  }
+
   .p10{
-    margin-top: 100px;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: auto;
     background-image: url(p10.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    /* border: 3px green solid; */
   }
   .p8{
-
-    margin-top: 100px;
-
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: auto;
     background-image: url(p8.png);
     background-size: contain;
     background-repeat: no-repeat;
+    /* border: 3px green solid; */
   }
   .rdb{
-    margin-top: 100px;
-
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: auto;
     background-image: url(robertdebre.png);
     background-size: contain;
     background-repeat: no-repeat;
+    /* border: 3px green solid; */
   }
   .southampton{
-    margin-top: 100px;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: auto;
     background-image: url(southampton.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    /* border: 3px green solid; */
   }
 
 /* --------------------------------------RESPONSIVENSSS -------------------------------------- */
@@ -518,7 +522,7 @@ input[type=checkbox]:checked ~ .menu{
        font-size: 0.7rem;
       }     
       .content_row{
-        gap: 12vw;  
+        gap: 4vw;  
         padding-bottom: 15vh;
       }
       
@@ -531,6 +535,13 @@ input[type=checkbox]:checked ~ .menu{
       font-size: 30px;
       margin-right: 1rem;
     }
+    .footer {
+      grid-template-columns: none;
+    }
+    .footer_mid{
+      height: 500px;
+    }
+ 
   }
 
     /*------------------------------------ PHONE ---------------------------------------------*/
@@ -561,8 +572,8 @@ input[type=checkbox]:checked ~ .menu{
          font-size: 0.7rem;
         }     
         .content_row{
-          gap: 12vw;  
-          padding-bottom: 25vh;
+          gap: 4vw;  
+          padding-bottom: 15vh;
           }
         .content_box{
           height: 100px;
@@ -573,6 +584,10 @@ input[type=checkbox]:checked ~ .menu{
         font-size: 30px;
         margin-right: 1rem;
       }
+      /* .footer {
+        grid-template-columns: none;
+      } */
+    
     }
 
 
