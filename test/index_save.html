@@ -1,0 +1,614 @@
+<html>
+<head>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+  <title>SIMBA - Homepage</title>
+</head>
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+box-sizing: border-box;
+}
+
+.contain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  border: solid 1px black;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(background-resized2.jpg);
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.head {
+  display: grid;
+  grid-area: 1 / 1 / 2 / 13;
+  /*border: solid 1px red;*/
+  justify-content: right;
+}
+
+.project {
+  grid-area: 6 / 2 / 10 / 6;
+  margin-left: 5vw;
+  /*border: solid 1px red;*/
+}
+
+.head ul {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+
+}
+
+.head li {
+  display: inline-block;
+  width: 10vw;
+  margin-left: 10px;
+  padding-top: 25px;
+  text-align: center;
+  list-style: none;
+  align-items: right;
+  justify-content: center
+}
+
+.head a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:100;
+  font-size: 1rem;
+}
+
+.head a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #66DFC3;
+  position: absolute;
+  top: 2px;
+  transition: all ease-in-out 250ms;
+}
+
+.head a:hover::before {
+  width: 10%;
+}
+
+h1{
+  color: #fff;
+  font-size: 6rem;
+}
+
+p{
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 15px;
+}
+
+button{
+  width: 180px;
+  color: #000;
+  font-size: 0.8rem;
+  padding: 12px 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+  background: linear-gradient(to left, #fff 50%, #66DFC3 50%) right;
+  background-size: 200%;
+  transition: .3s ease-out;
+}
+
+button:hover {
+    background-position: left;
+}
+
+.card {
+  border: solid 1px #fff;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1s;
+}
+
+.card:hover{
+transform: scale(1.1); }
+
+.card1{
+  grid-area: 4 / 8 / 7 / 10;
+  background-image: url(card1-resized.jpg);
+  width: 200px;
+  height: 200px;
+}
+
+.card2{
+  grid-area: 4 / 10 / 7 / 12;
+  background-image: url(card2-resized.jpg);
+  width: 200px;
+  height: 200px;
+}
+
+.card3{
+  grid-area: 7 / 9 / 10 / 11;
+  background-image: url(card3-resized.jpg);
+  width: 200px;
+  height: 200px;
+}
+
+.card h5{
+  color: #000;
+  text-align: center;
+  top:30%;
+  position: relative;
+}
+
+/* ---------------------------------------------------------------------
+
+.head {
+  float: right;
+}
+
+.head ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.head li {
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: relative;
+  margin-left: 35px;
+}
+
+.head a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight:100;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+*/
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px 00px 20px 30px;
+  color: #fff;
+  background-color: #000;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1em;
+  font-size: 0.8em;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+  line-height: 200%;
+}
+
+.footer_addr {
+  margin-right: 1.25em;
+  margin-bottom: 0em;
+}
+
+.footer_addr h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer_logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.nav_title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer_nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer_nav > * {
+  flex: 1 50%;
+  margin-right: 0.25em;
+}
+
+.nav_ul a {
+  color: #999;
+}
+.nav_ul a:hover {
+  color: #C6C6C6;
+}
+
+h6 {
+  background: #2F3030;
+  border-top: solid 1px #fff;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.5em;
+  font-weight: 100;
+
+}
+.about{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #2F3030;
+  color: #999;
+  font-size: 0.8em;
+}
+
+.memb{
+  text-align: center;
+}
+
+.memb_name{
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+.photo{
+  margin-top: 20px;
+
+  width:140px;
+  border-radius: 50%;
+  border: solid 2px #999;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+/* ----------------------------------    border: solid 1px red; -----------------------------*/
+@media screen and (max-width: 1000px) {
+
+  .contain {
+    display: grid;
+    row-gap: 2em;
+    justify-content: center;
+  }
+
+  .head {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding:0;
+    border-bottom: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.5);
+
+  }
+
+  .project {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: auto;
+/*grid-row-end: 3;*/
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+.card {
+  display: inline-block;
+}
+  .card1{
+    grid-row-start: 2;
+      grid-row-end: auto;
+      width: 100px;
+      height: 100px;
+ }
+
+  .card2{ grid-row-start: 2;
+      grid-row-end: auto;
+      width: 100px;
+      height: 100px;
+}
+
+  .card3{ grid-row-start: 2;
+      grid-row-end: auto;
+      margin-top: 150px;
+      width: 100px;
+      height: 100px;
+ }
+
+  h1{
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  p{
+    color: #fff;
+    font-size: 0.7rem;
+    line-height: auto;
+  }
+
+  button{
+    font-size: 0.6rem;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    /*font-size: 0.8em;*/
+  }
+
+  .head li {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .head a{
+    font-size: 14px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .head a::before {
+      display:none
+  }
+
+  .head a:hover::before {
+      width: 10%;
+  }
+
+  h6 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+/*.head{  background-color: red; }*/
+
+h6 {
+  font-size: 1.5em;
+}
+.footer_nav{
+  margin-top: 30px;
+}
+
+h1{
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: 0.5rem;}
+
+  button{
+    font-size: 0.5rem;
+  }
+
+  .card1{
+    width: 80px;
+    height: 80px;
+  }
+
+  .card2{
+    width: 80px;
+    height: 80px;
+  }
+
+  .card3{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media screen and (min-width: 1800px) {
+  .card1{
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .card2{
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .card3{
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+
+@media screen and (min-width: 650px) {
+  .footer_nav > * {
+    flex: 1;
+  }
+  .footer_addr {
+    flex: 1 0px;
+  }
+  .footer_nav {
+    flex: 2 0px;
+  }
+}
+
+</style>
+
+<div class="contain">
+
+  <div class="head">
+    <ul>
+      <li><a href="#" style="font-weight:700">Home</a></li>
+      <li><a href="#">Cohorts</a></li>
+      <li><a href="#">Map</a></li>
+      <li><a href="#">Results</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </div>
+
+  <div class="project">
+    <h1>SIMBA</h1>
+    <p>Synergy for the Influence of Month of Birth in ADHD</p>
+    <button type = "button"><a>Try another design</a></button>
+  </div>
+
+    <div class="card card1">
+      <!--<h5>Header Card</h5>-->
+    </div>
+    <div class="card card2">
+      <!--<h5>Header Card</h5>-->
+    </div>
+    <div class="card card3">
+      <!--<h5>Header Card</h5>-->
+    </div>
+</div>
+<h6>Founders of the SIMBA team</h6>
+<div class = "about">
+  <div class = "memb">
+      <img src="photo_gosling-resized.jpg" class="photo">
+    <div class = "memb_name">
+    Corentin J. Gosling<br>PhD
+    </div>
+    <div class = "memb_affil">
+    University Paris Nanterre<br>France
+    </div>
+  </div>
+
+  <div class = "memb">
+      <img src="pinabiaux-resized.jpg" class="photo">
+    <div class = "memb_name">
+    Charlotte Pinabiaux<br>PhD
+    </div>
+    <div class = "memb_affil">
+    University Paris Nanterre<br>France
+    </div>
+  </div>
+
+
+  <div class = "memb">
+      <img src="caparos-resized.jpg" class="photo">
+    <div class = "memb_name">
+    Serge Caparos<br>PhD
+    </div>
+    <div class = "memb_affil">
+    University Paris VIII<br> France
+    </div>
+  </div>
+
+  <div class = "memb">
+      <img src="photo_delorme-resized.jpg" class="photo">
+    <div class = "memb_name">
+    Richard Delorme<br>MD, PhD
+    </div>
+    <div class = "memb_affil">
+    Robert Debré Hospital<br>France
+    </div>
+  </div>
+
+  <div class = "memb">
+      <img src="photo_cortese-resized.jpg" class="photo">
+    <div class = "memb_name">
+    Samuele Cortese<br>MD, PhD
+    </div>
+    <div class = "memb_affil">
+    University of Southampton<br>UK
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="footer_addr">
+    <h4 class="footer_logo">SIMBA</h4>
+
+    <address>
+      University Paris Nanterre, France<br>
+      Robert Debré Hospital, France<br>
+      University of Southampton, UK<br>
+      <button type = "button" style = "border:solid 1px #000"><a href="cgosling@parisnanterre.fr" style = "text-decoration:none; color: #000">Contact us</a></button>
+    </address>
+  </div>
+
+  <ul class="footer_nav">
+    <li class="nav__item">
+      <h2 class="nav_title">Cohorts</h2>
+      <ul class="nav_ul">
+        <li><a href="#">Included cohorts</a></li>
+        <li><a href="#">Non-available cohorts</a></li>
+        <li><a href="#">&nbsp;</a></li>
+      </ul>
+    </li>
+
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav_title">Results</h2>
+      <ul class="nav_ul nav_ul--extra">
+        <li><a href="#">Tables</a></li>
+        <li><a href="#">Forest plots</a></li>
+        <li><a href="#">&nbsp;</a></li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav_title">Publications</h2>
+      <ul class="nav_ul">
+        <li><a href="#">Protocol</a></li>
+        <li><a href="#">Manuscript</a></li>
+        <li><a href="#">Supplementary Materials</a></li>
+      </ul>
+    </li>
+  </ul>
+
+</footer>
+
+
+</html>
