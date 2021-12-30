@@ -21,6 +21,7 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
+  background-color: rgb(47,73,108);
 
   display:flex;
   flex-direction: column; 
@@ -97,9 +98,8 @@ background: linear-gradient(291deg, rgba(47,73,108,1) 13%, rgba(53,83,121,1) 37%
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10vw;  
-    position: absolute;
-    top: 85%;
-    transform: translate(0, -85%);
+    margin-top: auto;
+    padding-bottom: 15vh;
   }
 
   .content_box{
@@ -458,8 +458,7 @@ input[type=checkbox]:checked ~ .menu{
       }     
       .content_row{
         gap: 10vw;  
-        top: 85%;
-        transform: translate(0, -85%);
+        padding-bottom: 15vh;
       }
       .content_box{
         height: 150px;
@@ -491,8 +490,7 @@ input[type=checkbox]:checked ~ .menu{
       }     
       .content_row{
         gap: 12vw;  
-        top: 85%;
-        transform: translate(0, -85%);
+        padding-bottom: 15vh;
       }
       .content_box{
         height: 125px;
@@ -520,10 +518,10 @@ input[type=checkbox]:checked ~ .menu{
        font-size: 0.7rem;
       }     
       .content_row{
-        gap: 3vw;  
-        top: 80%;
-        transform: translate(0, -80%);
+        gap: 12vw;  
+        padding-bottom: 15vh;
       }
+      
       .content_box{
         height: 125px;
         width: 125px;
@@ -540,7 +538,7 @@ input[type=checkbox]:checked ~ .menu{
 
 
       .content {
-        height: 80vh;
+        height: 100vh;
       }
       .content_title{
         padding: 3rem 1rem;
@@ -550,7 +548,7 @@ input[type=checkbox]:checked ~ .menu{
       }
 
       .content:before {
-        height: 40vh;
+        height: 70vh;
       }
   
       .content_title h1{
@@ -563,10 +561,9 @@ input[type=checkbox]:checked ~ .menu{
          font-size: 0.7rem;
         }     
         .content_row{
-          gap: 3vw;  
-          top: 85%;
-          transform: translate(0, -85%);
-        }
+          gap: 12vw;  
+          padding-bottom: 25vh;
+          }
         .content_box{
           height: 100px;
           width: 100px;
