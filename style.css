@@ -566,17 +566,17 @@ input[type=checkbox]:checked ~ .menu{
     @media (max-width: 650px) {
 
       .content{
-        height: 60vh;
+        height: 74vh;
       }
       .content_title{
         padding: 3.5rem 1rem;
         width: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 37%;
+        transform: translate(0, -37%);
       }
 
       .content:before {
-        height: 30vh;
+        height: 37vh;
       }
   
       .content_title h1{
@@ -590,7 +590,7 @@ input[type=checkbox]:checked ~ .menu{
         }     
         .content_row{
           gap: 4vw;  
-          padding-bottom: 5vh;
+          padding-bottom: 15vh;
           }
         .content_box{
           height: 100px;
