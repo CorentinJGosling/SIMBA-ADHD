@@ -530,9 +530,9 @@ input[type=checkbox]:checked ~ .menu{
     }
   }
   /*------------------------------------ SMALL SCREEN ---------------------------------------------*/
-  @media (max-width: 800px) {
+  @media (max-width: 880px) {
     .content_title{
-      padding: 1.5rem;
+      padding: 6rem 1.5rem;
       width: 100%
     }
 
@@ -563,17 +563,20 @@ input[type=checkbox]:checked ~ .menu{
   }
 
     /*------------------------------------ PHONE ---------------------------------------------*/
-    @media (max-width: 550px) {
+    @media (max-width: 650px) {
 
+      .content{
+        height: 60vh;
+      }
       .content_title{
-        padding: 3rem 1rem;
+        padding: 3.5rem 1rem;
         width: 100%;
-        top: 30%;
-        transform: translate(0, -30%);
+        top: 50%;
+        transform: translate(0, -50%);
       }
 
       .content:before {
-        height: 70vh;
+        height: 30vh;
       }
   
       .content_title h1{
@@ -587,7 +590,7 @@ input[type=checkbox]:checked ~ .menu{
         }     
         .content_row{
           gap: 4vw;  
-          padding-bottom: 25vh;
+          padding-bottom: 5vh;
           }
         .content_box{
           height: 100px;
