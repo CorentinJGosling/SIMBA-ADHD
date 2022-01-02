@@ -101,7 +101,7 @@ background: linear-gradient(291deg, rgba(47,73,108,1) 13%, rgba(53,83,121,1) 37%
     flex-wrap: wrap;
     gap: 10vw;  
     margin-top: auto;
-    padding-bottom: 15vh;
+    padding-bottom: 8vh;
     /* border: 2px solid red; */
 
   }
@@ -474,7 +474,7 @@ input[type=checkbox]:checked ~ .menu{
       }     
       .content_row{
         gap: 10vw;  
-        padding-bottom: 15vh;
+        padding-bottom: 8vh;
       }
       .content_box{
         height: 150px;
@@ -506,7 +506,7 @@ input[type=checkbox]:checked ~ .menu{
       }     
       .content_row{
         gap: 12vw;  
-        padding-bottom: 15vh;
+        padding-bottom: 8vh;
       }
       .content_box{
         height: 125px;
@@ -547,7 +547,7 @@ input[type=checkbox]:checked ~ .menu{
       }     
       .content_row{
         gap: 4vw;  
-        padding-bottom: 15vh;
+        padding-bottom: 8vh;
       }
       
       .content_box{
@@ -590,7 +590,7 @@ input[type=checkbox]:checked ~ .menu{
         }     
         .content_row{
           gap: 4vw;  
-          padding-bottom: 15vh;
+          padding-bottom: 3vh;
           }
         .content_box{
           height: 100px;
