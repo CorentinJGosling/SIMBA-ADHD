@@ -103,7 +103,11 @@ background: linear-gradient(291deg, rgba(47,73,108,1) 13%, rgba(53,83,121,1) 37%
     margin-top: auto;
     padding-bottom: 8vh;
     /* border: 2px solid red; */
+  }
 
+  .content_row a{
+    text-decoration: none;
+    color: #000
   }
 
   .content_box{
@@ -328,8 +332,16 @@ input[type=checkbox]:checked ~ .menu{
     background: #5b718f;
     color: #fff;
   }
+  .rank_author{
+    font-style: italic;
+    text-decoration: underline;
+  }
   .memb{
     text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .memb_name{
     display:flex;
@@ -349,8 +361,7 @@ input[type=checkbox]:checked ~ .menu{
 
 
   .photo{
-    margin-top: 20px;
-  
+    margin-top: 0.3rem;
     width: 140px;
     border-radius: 50%;
     border: solid 2px #fff;
@@ -476,6 +487,7 @@ input[type=checkbox]:checked ~ .menu{
         gap: 10vw;  
         padding-bottom: 8vh;
       }
+
       .content_box{
         height: 150px;
         width: 150px;
