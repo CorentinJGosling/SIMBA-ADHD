@@ -590,7 +590,7 @@ input[type=checkbox]:checked ~ .menu{
         }     
         .content_row{
           gap: 4vw;  
-          padding-bottom: 3vh;
+          padding-bottom: 8vh;
           }
         .content_box{
           height: 100px;
