@@ -156,7 +156,8 @@ background: linear-gradient(291deg, rgba(47,73,108,1) 13%, rgba(53,83,121,1) 37%
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom ;
-    }
+    opacity: 0.4;
+  }
   .content_box:hover {
     cursor: pointer;
     

@@ -5,9 +5,9 @@ account: ebiact
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5386584
-bundleId: 5426875
+bundleId: 5450073
 url: https://ebiact.shinyapps.io/SIMBA-app-cohort/
-when: 1641134782.21034
-lastSyncTime: 1641134782.21034
+when: 1641762913.52518
+lastSyncTime: 1641762913.52518
 asMultiple: FALSE
 asStatic: FALSE
