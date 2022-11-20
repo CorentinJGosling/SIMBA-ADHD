@@ -21,16 +21,8 @@
 /* ---------------------------------------------NAVBAR STYLING STARTS ------------------------------------------------------*/
 /* NAVBAR STYLING STARTS */
 .navbar {
-  border-bottom: thick double #fff;
   display: flex;
-  background: rgb(47, 73, 108);
-  background: linear-gradient(
-    291deg,
-    rgba(47, 73, 108, 1) 13%,
-    rgba(53, 83, 121, 1) 37%,
-    rgba(56, 83, 115, 1) 58%,
-    rgba(50, 77, 108, 1) 89%
-  );
+  background-color: #2f496c;
   color: var(--main-nav);
   justify-content: flex-end;
 }
@@ -82,21 +74,26 @@
   color: #fff;
   text-align: center;
   display: flex;
-  width: 30%;
+  width: 50%;
 }
 .menu li {
   width: 100%;
   padding: 1.2rem 0rem;
 }
 .menu li a {
-  /* width: 100%; */
+  width: 100%;
 }
 
 /*HAMBURGER MENU*/
 .menu li:hover {
   display: inline-block;
-  /* background-color: #52667f; */
+  background-color: #52667f;
   transition: 0.3s ease;
+}
+
+iframe[seamless] {
+  border: none;
+  width: 100vw;
 }
 
 /* --------------------------------------RESPONSIVENSSS -------------------------------------- */
