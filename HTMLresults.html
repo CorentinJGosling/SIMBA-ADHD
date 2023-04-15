@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style_app.css" />
-  <title>Accueil</title>
- </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_results.css" />
+    <title>Accueil</title>
+  </head>
 
- <body>
-
-  <div class="content">
-      <!--------------------------------------------------- navigation -------------------------------------------------------------->
-      <nav class="navbar">
-
-        <!-- <div class="logo">SIMBA</div> -->
-        
+  <body>
+    <div class="content">
+      <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
         <ul class="menu">
-        
-            <li><a href="index.html" class = "non_active">Home</a></li>
-            <li><a href="HTMLapp.html" class = "non_active" >Cohorts</a></li>
-            <li><a href="" class = "active">Results</a></li>
-            <li><a href="HTMLteam.html" class = "non_active">Team</a></li>
+          <li><a class="non_active nav_top" href="index.html">HOME</a></li>
+          <li><a class="non_active" href="HTMLapp.html">COHORTS</a></li>
+          <li><a class="non_active" href="HTMLresults.html">RESULTS</a></li>
+          <li><a class="active nav_bot" href="">TEAM</a></li>
         </ul>
-      </nav>
-    
-      <iframe id="app" src="https://corentinjgosling.github.io/SIMBA-ADHD-SUPP/" style="border: none; width: 100%; height: 95vh" frameborder="0" seamless></iframe>
- </body>
+      </header>
+    </div>
+
+    <iframe
+      id="app"
+      src="https://corentinjgosling.github.io/SIMBA-ADHD-SUPP/"
+      style="
+        border: none;
+        width: 100%;
+        height: 95vh;
+        position: absolute;
+        top: 50px;
+        z-index: -1;
+        overflow-y: scroll;
+      "
+      frameborder="0"
+      seamless
+    ></iframe>
+  </body>
 </html>
