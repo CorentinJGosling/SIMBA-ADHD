@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Accueil</title>
+    <title>SIMBA - Accueil</title>
   </head>
 
   <body>
@@ -17,33 +17,13 @@
         ></label>
         <ul class="menu">
           <li><a class="active nav_top" href="">HOME</a></li>
-          <li><a class="non_active" href="HTMLapp.html">COHORTS</a></li>
+          <li><a class="non_active" href="HTMLcohort.html">COHORTS</a></li>
           <li><a class="non_active" href="HTMLresults.html">RESULTS</a></li>
-          <li><a class="non_active nav_bot" href="app.html">TEAM</a></li>
+          <li><a class="non_active nav_bot" href="HTMLteam.html">TEAM</a></li>
         </ul>
       </header>
 
       <!-- ------------------------------------------------- navigation ------------------------------------------------------------ -->
-      <!-- <nav class="navbar"> -->
-      <!-- <div class="logo">SIMBA</div> -->
-
-      <!-- <ul class="nav-links"> -->
-      <!-- <input type="checkbox" id="checkbox_toggle"></input>
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
-
-      <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"
-            ><span class="navicon"></span
-          ></label>
-
-          <div class="menu">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="app.html" class="non_active">Cohorts</a></li>
-            <li><a href="" class="non_active">Results</a></li>
-            <li><a href="" class="non_active">Team</a></li>
-          </div>
-        </ul>
-      </nav> -->
 
       <div class="content_title">
         <h1>SIMBA</h1>
@@ -51,7 +31,7 @@
       </div>
 
       <div class="content_row">
-        <a href="HTMLapp.html">
+        <a href="HTMLcohort.html">
           <div class="content_box box1">
             <p style="font-weight: bold">Cohorts</p>
           </div>
@@ -61,9 +41,11 @@
             <p style="font-weight: bold">Results</p>
           </div>
         </a>
-        <div class="content_box box3">
-          <p style="font-weight: bold">Team</p>
-        </div>
+        <a href="HTMLteam.html"
+          ><div class="content_box box3">
+            <p style="font-weight: bold">Team</p>
+          </div></a
+        >
       </div>
     </div>
 
@@ -115,7 +97,7 @@
           Hôpital Robert Debré, France,<br />
           Université Paris VIII, France,<br />
           University of Southampton, UK,<br />
-          With the collaboration of more than 150 researchers<br />
+          A collaboration with 150+ researchers<br />
           <button type="button" style="border: solid 1px #fff">
             <a
               href=""
@@ -133,10 +115,18 @@
       </div>
 
       <div class="footer_mid">
-        <div class="p10"></div>
-        <div class="p8"></div>
-        <div class="rdb"></div>
-        <div class="southampton"></div>
+        <div class="instit_logo">
+          <img src="p10.svg" class="institution" />
+        </div>
+        <div class="instit_logo">
+          <img src="p8.png" class="institution" />
+        </div>
+        <div class="instit_logo">
+          <img src="robertdebre.png" class="institution" />
+        </div>
+        <div class="instit_logo">
+          <img src="southampton.svg" class="institution" />
+        </div>
       </div>
     </footer>
   </body>

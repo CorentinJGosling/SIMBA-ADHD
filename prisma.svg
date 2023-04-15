@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="168.71597mm"
+   height="203.1118mm"
+   viewBox="0 0 168.71597 203.1118"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="prisma.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0998546"
+     inkscape:cx="334.58968"
+     inkscape:cy="288.67452"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         x="12"
+         y="69"
+         width="638"
+         height="768"
+         id="rect824" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.322426,-41.670901)">
+    <rect
+       x="31.417913"
+       y="54.591389"
+       width="65.616997"
+       height="43.127083"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect829"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text831"
+       x="34.681099"
+       y="75.228889"
+       style="stroke-width:0.264583">Records identified from</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text833"
+       x="34.681099"
+       y="79.991386"
+       style="stroke-width:0.264583">databases (n = 33,119)</text>
+    <rect
+       x="117.67208"
+       y="54.591389"
+       width="65.616669"
+       height="43.127083"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect835"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text837"
+       x="120.83597"
+       y="70.466385"
+       style="stroke-width:0.264583">Records removed</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-style="italic"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text839"
+       x="153.24742"
+       y="70.466385"
+       style="stroke-width:0.264583">before</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-style="italic"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text841"
+       x="120.83597"
+       y="74.964302"
+       style="stroke-width:0.264583">screening</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text843"
+       x="138.03387"
+       y="74.964302"
+       style="stroke-width:0.264583">:</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text845"
+       x="120.83597"
+       y="79.991386"
+       style="stroke-width:0.264583">Duplicate records removed</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text847"
+       x="120.83597"
+       y="84.753891"
+       style="stroke-width:0.264583">(n = 6,020)</text>
+    <rect
+       x="31.417913"
+       y="110.68305"
+       width="65.616669"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect849"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text851"
+       x="34.681099"
+       y="118.88514"
+       style="stroke-width:0.264583">Records screened</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text853"
+       x="34.681099"
+       y="123.91222"
+       style="stroke-width:0.264583">(n = 27,099)</text>
+    <rect
+       x="117.93666"
+       y="110.68305"
+       width="65.616669"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect855"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text857"
+       x="121.11166"
+       y="118.88514"
+       style="stroke-width:0.264583">Records excluded</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text859"
+       x="121.11166"
+       y="123.91222"
+       style="stroke-width:0.264583">(n = 26,098)</text>
+    <rect
+       x="31.682497"
+       y="141.11014"
+       width="65.352081"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect861"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text863"
+       x="34.736237"
+       y="149.31223"
+       style="stroke-width:0.264583">Reports sought for retrieval</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text865"
+       x="34.736237"
+       y="154.33929"
+       style="stroke-width:0.264583">(n = 1001)</text>
+    <rect
+       x="117.93666"
+       y="141.90388"
+       width="65.616669"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect867"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text869"
+       x="121.1667"
+       y="149.84138"
+       style="stroke-width:0.264583">Reports not retrieved</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text871"
+       x="121.1667"
+       y="154.86847"
+       style="stroke-width:0.264583">(n = 0)</text>
+    <rect
+       x="31.682497"
+       y="171.27264"
+       width="65.352081"
+       height="18.25625"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect873"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text875"
+       x="34.791351"
+       y="179.21014"
+       style="stroke-width:0.264583">Reports assessed for eligibility</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text877"
+       x="34.791351"
+       y="184.23721"
+       style="stroke-width:0.264583">(n = 1001)</text>
+    <rect
+       x="118.20125"
+       y="171.00806"
+       width="65.616669"
+       height="39.422916"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect879"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text881"
+       x="121.44239"
+       y="182.64972"
+       style="stroke-width:0.264583">Reports excluded:</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text883"
+       x="121.44239"
+       y="187.41222"
+       style="stroke-width:0.264583">Reason 1 (n = )</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text885"
+       x="121.44239"
+       y="192.17471"
+       style="stroke-width:0.264583">Reason 2 (n = )</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text887"
+       x="121.44239"
+       y="196.93723"
+       style="stroke-width:0.264583">Reason 3 (n = )</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text889"
+       x="121.44239"
+       y="201.96429"
+       style="stroke-width:0.264583">etc.</text>
+    <rect
+       x="30.888746"
+       y="218.36847"
+       width="65.616669"
+       height="25.135416"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect891"
+       style="fill:#ffffff;fill-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text893"
+       x="34.019642"
+       y="223.66014"
+       style="stroke-width:0.264583">Studies included in review</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text895"
+       x="34.019642"
+       y="228.68723"
+       style="stroke-width:0.264583">(n = 80)</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text897"
+       x="34.019642"
+       y="236.36014"
+       style="stroke-width:0.264583">Reports of included studies</text>
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="3.96875px"
+       id="text899"
+       x="34.019642"
+       y="241.38722"
+       style="stroke-width:0.264583">(n = 58)</text>
+    <path
+       d="m 97.166871,76.309181 h 17.352169 v 0.220663 H 97.166871 Z m 16.911369,-1.212585 2.64584,1.322917 -2.64584,1.322916 z"
+       id="path901"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 97.166871,119.96543 h 17.352169 v 0.22066 H 97.166871 Z m 16.911369,-1.21258 2.64584,1.32291 -2.64584,1.32292 z"
+       id="path903"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 97.166871,150.39251 h 17.352169 v 0.22067 H 97.166871 Z m 16.911369,-1.21258 2.64584,1.32292 -2.64584,1.32291 z"
+       id="path905"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 97.166871,180.55501 h 17.352169 v 0.22067 H 97.166871 Z m 16.911369,-1.21258 2.64584,1.32291 -2.64584,1.32292 z"
+       id="path907"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 31.682496,43.390782 c 0,-0.828093 0.671301,-1.499394 1.499368,-1.499394 H 181.26045 c 0.82788,0 1.49939,0.671301 1.49939,1.499394 l -2.6e-4,5.997204 c 0,0.827987 -0.67125,1.4995 -1.4994,1.4995 L 33.181864,50.887221 c -0.828067,0 -1.499368,-0.671248 -1.499368,-1.499393 z"
+       stroke="#7f5f00"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="#ffc000"
+       fill-rule="evenodd"
+       id="path909" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="3.96875px"
+       id="text911"
+       x="71.386665"
+       y="47.976807"
+       style="stroke-width:0.264583">Identification of studies via databases</text>
+    <path
+       d="m 17.306811,98.776804 c -0.82804,0 -1.499314,-0.671248 -1.499314,-1.499394 V 55.826198 c 0,-0.828145 0.671274,-1.499393 1.499314,-1.499393 h 5.997204 c 0.82804,0 1.499315,0.671248 1.499315,1.499393 V 97.27741 c 0,0.828146 -0.671275,1.499394 -1.499315,1.499394 z"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="#9cc2e5"
+       fill-rule="evenodd"
+       id="path913"
+       style="stroke:#000000;stroke-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="3.96875px"
+       transform="rotate(-90)"
+       id="text915"
+       x="-88.987221"
+       y="21.84886"
+       style="stroke-width:0.264583">Identification</text>
+    <path
+       d="m 17.08636,209.9018 c -0.852434,0 -1.543447,-0.69109 -1.543447,-1.54331 v -93.75087 c 0,-0.85222 0.691013,-1.54332 1.543447,-1.54332 h 6.173523 c 0.852435,0 1.543447,0.6911 1.543447,1.54332 v 93.75087 c 0,0.85222 -0.691012,1.54331 -1.543447,1.54331 z"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="#9cc2e5"
+       fill-rule="evenodd"
+       id="path917"
+       style="stroke:#000000;stroke-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="3.96875px"
+       transform="rotate(-90)"
+       id="text919"
+       x="-171.00806"
+       y="21.79372"
+       style="stroke-width:0.264583">Screening</text>
+    <path
+       d="m 17.615474,244.56222 c -0.852382,0 -1.543394,-0.69109 -1.543394,-1.54332 v -23.3717 c 0,-0.85222 0.691012,-1.54331 1.543394,-1.54331 h 6.173629 c 0.852381,0 1.543393,0.69109 1.543393,1.54331 v 23.3717 c 0,0.85223 -0.691012,1.54332 -1.543393,1.54332 z"
+       stroke="#000000"
+       stroke-width="0.440973"
+       stroke-miterlimit="8"
+       fill="#9cc2e5"
+       fill-rule="evenodd"
+       id="path921"
+       style="stroke:#000000;stroke-opacity:1" />
+    <text
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="3.96875px"
+       transform="rotate(-90)"
+       id="text923"
+       x="-239.53514"
+       y="22.3449"
+       style="stroke-width:0.264583">Included</text>
+    <path
+       d="m 64.468869,97.850762 v 7.562588 h -0.220663 v -7.562588 z m 1.212585,7.121788 -1.322916,2.64584 -1.322917,-2.64584 z"
+       id="path925"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 64.468869,129.0716 v 7.56258 h -0.220663 v -7.56258 z m 1.212585,7.12178 -1.322916,2.64584 -1.322917,-2.64584 z"
+       id="path927"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 64.733452,159.49868 v 7.56258 H 64.51279 v -7.56258 z m 1.212586,7.12179 -1.322917,2.64583 -1.322917,-2.64583 z"
+       id="path929"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+    <path
+       d="m 64.468869,189.66118 v 23.70217 h -0.220663 v -23.70217 z m 1.212585,23.26137 -1.322916,2.64583 -1.322917,-2.64583 z"
+       id="path931"
+       style="stroke-width:0.264583;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1" />
+  </g>
+</svg>

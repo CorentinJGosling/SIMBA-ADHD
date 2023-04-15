@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_cohort.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <title>SIMBA - Cohorts</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a class="non_active nav_top" href="index.html">HOME</a></li>
+          <li><a class="active" href="">COHORTS</a></li>
+          <li><a class="non_active" href="HTMLresults.html">RESULTS</a></li>
+          <li><a class="non_active nav_bot" href="HTMLteam.html">TEAM</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="main">
+      <h1>Description of identified cohorts</h1>
+      <div class="navgator">
+        <div class="navBTN clicked">Summary</div>
+        <div class="navBTN">Included cohorts</div>
+        <div class="navBTN">Excluded cohorts</div>
+      </div>
+      <div class="cont cont1">
+        <div class="left">
+          <img src="prisma.svg" class="leftIMG" />
+        </div>
+        <div class="right">
+          <div class="sumBOX">
+            <div class="iconTOT"><i class="fas fa-globe"></i></div>
+            <div class="numTOT">A total of 27,099 reports identified</div>
+          </div>
+          <div class="sumBOX inc">
+            <div class="iconINC"><i class="far fa-check-square"></i></div>
+            <div class="numINC">Data of 58 cohorts collected</div>
+          </div>
+          <div class="sumBOX exc">
+            <div class="iconEXC"><i class="far fa-times-circle"></i></div>
+            <div class="numEXC">Data of 18 cohorts failed to be collected</div>
+          </div>
+        </div>
+      </div>
+      <div class="cont cont2" style="display: none">
+        <div id="filter-panel">
+          <div class="filters">
+            <label for="filter1">School-entry system</label><br />
+            <select
+              id="filter1"
+              class="js-example-basic-multiple"
+              style="width: 300px"
+              multiple
+            ></select>
+          </div>
+          <div class="filters">
+            <label for="filter2">Diagnostic procedure</label><br />
+            <select
+              id="filter2"
+              class="js-example-basic-multiple"
+              style="width: 300px"
+              multiple
+            ></select>
+          </div>
+          <div class="filters">
+            <label for="filter3">Type of sampling</label><br />
+            <select
+              id="filter3"
+              class="js-example-basic-multiple"
+              style="width: 300px"
+              multiple
+            ></select>
+          </div>
+        </div>
+        <div id="data-table"></div>
+      </div>
+      <div class="cont cont3" style="display: none">
+        <div id="data-table2"></div>
+      </div>
+    </div>
+    <script>
+      const buttons = document.querySelectorAll(".navBTN");
+      const content = document.querySelectorAll(".cont");
+
+      buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) => {
+            btn.classList.remove("clicked");
+          });
+          button.classList.add("clicked");
+          content.forEach((c) => {
+            c.style.display = "none";
+          });
+          content[index].style.display = "grid";
+        });
+      });
+      function filterTable() {
+        var nameFilter = $("#filter1").val() || [];
+        var ageFilter = $("#filter2").val() || [];
+        var interventionFilter = $("#filter3").val() || [];
+        $("#data-table tbody tr").each(function () {
+          var name = $(this).find("td:eq(4)").text();
+          var age = $(this).find("td:eq(6)").text();
+          var intervention = $(this).find("td:eq(8)").text();
+          if (
+            (nameFilter.length === 0 || nameFilter.indexOf(name) !== -1) &&
+            (ageFilter.length === 0 || ageFilter.indexOf(age) !== -1) &&
+            (interventionFilter.length === 0 ||
+              interventionFilter.indexOf(intervention) !== -1)
+          ) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      }
+      $("#filter1, #filter2, #filter3").on("change", function () {
+        filterTable();
+      });
+
+      $(document).ready(function () {
+        var optgroupPsy = false;
+        var optgroupPhar = false;
+
+        $(".js-example-basic-multiple").select2({});
+        $("#data-table").load("table.html", function () {
+          // Populate filtering panel with unique values from the table
+          var nameOptions = [];
+          var ageOptions = [];
+          var interventionOptions = [];
+          $("#data-table tbody tr").each(function () {
+            var name = $(this).find("td:eq(4)").text();
+            var age = $(this).find("td:eq(6)").text();
+            var intervention = $(this).find("td:eq(8)").text();
+            if ($.inArray(name, nameOptions) == -1) nameOptions.push(name);
+            if ($.inArray(age, ageOptions) == -1) ageOptions.push(age);
+            if ($.inArray(intervention, interventionOptions) == -1)
+              interventionOptions.push(intervention);
+          });
+          nameOptions.sort();
+          ageOptions.sort();
+          interventionOptions.sort();
+          $.each(nameOptions, function (i, value) {
+            $("#filter1").append(
+              '<option value="' + value + '">' + value + "</option>"
+            );
+          });
+          $.each(ageOptions, function (i, value) {
+            $("#filter2").append(
+              '<option value="' + value + '">' + value + "</option>"
+            );
+          });
+          $.each(interventionOptions, function (i, value) {
+            $("#filter3").append(
+              '<option value="' + value + '">' + value + "</option>"
+            );
+          });
+        });
+
+        $("#data-table2").load("table.html", function () {});
+      });
+    </script>
+  </body>
+</html>
