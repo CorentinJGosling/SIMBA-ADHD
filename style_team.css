@@ -250,6 +250,11 @@ body {
     font-size: 30px;
     margin-right: 1rem;
   }
+  .num {
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 5px solid rgb(51, 92, 146);
+  }
 }
 
 /*------------------------------------ PHONE ---------------------------------------------*/

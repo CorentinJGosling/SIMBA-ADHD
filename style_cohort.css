@@ -191,7 +191,7 @@ body {
   display: grid;
   /* align-items: center;
   justify-content: center; */
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 250px 250px;
   gap: 0.3rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -395,6 +395,17 @@ h1 {
   .hamburger {
     font-size: 40px;
   }
+  .left {
+    text-align: center;
+  }
+  .cont1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
 }
 /*------------------------------------ SMALL SCREEN ---------------------------------------------*/
 @media (max-width: 880px) {
@@ -402,10 +413,33 @@ h1 {
     font-size: 30px;
     margin-right: 1rem;
   }
+  .leftIMG {
+    width: 100%;
+  }
+  .navgator {
+    grid-template-columns: auto auto;
+  }
+  #filter-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }
 
 /*------------------------------------ PHONE ---------------------------------------------*/
 @media (max-width: 650px) {
+  .sumBOX .far.fa-check-square {
+    font-size: 2rem;
+    color: #78ffc0;
+  }
+  .sumBOX .fas.fa-globe {
+    font-size: 2rem;
+    color: #fff1bb;
+  }
+  .sumBOX .far.fa-times-circle {
+    font-size: 2rem;
+    color: #ffd8d8;
+  }
   .hamburger {
     font-size: 30px;
     margin-right: 1rem;
