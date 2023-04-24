@@ -330,8 +330,7 @@ h1 {
   color: #000;
   font-size: 1.2rem;
 }
-#data-table,
-#data-table2 {
+#data-table {
   border-radius: 5px;
   font-size: 12px;
   font-weight: normal;
@@ -346,9 +345,7 @@ h1 {
 }
 
 #data-table td,
-#data-table th,
-#data-table2 td,
-#data-table2 th {
+#data-table th {
   text-align: center;
   padding: 8px;
 }

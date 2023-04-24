@@ -45,7 +45,6 @@
       <div class="navgator">
         <div class="navBTN clicked">Summary</div>
         <div class="navBTN">Included cohorts</div>
-        <div class="navBTN">Excluded cohorts</div>
       </div>
       <div class="cont cont1">
         <div class="left">
@@ -54,7 +53,9 @@
         <div class="right">
           <div class="sumBOX">
             <div class="iconTOT"><i class="fas fa-globe"></i></div>
-            <div class="numTOT">A total of 27,099 reports identified</div>
+            <div class="numTOT">
+              A total of 27,099 unique reports identified
+            </div>
           </div>
           <div class="sumBOX inc">
             <div class="iconINC"><i class="far fa-check-square"></i></div>
@@ -62,7 +63,7 @@
           </div>
           <div class="sumBOX exc">
             <div class="iconEXC"><i class="far fa-times-circle"></i></div>
-            <div class="numEXC">Data of 18 cohorts failed to be collected</div>
+            <div class="numEXC">Data of 73 cohorts failed to be collected</div>
           </div>
         </div>
       </div>
@@ -98,9 +99,6 @@
         </div>
         <div id="data-table"></div>
       </div>
-      <div class="cont cont3" style="display: none">
-        <div id="data-table2"></div>
-      </div>
     </div>
     <script>
       const buttons = document.querySelectorAll(".navBTN");
@@ -123,9 +121,9 @@
         var ageFilter = $("#filter2").val() || [];
         var interventionFilter = $("#filter3").val() || [];
         $("#data-table tbody tr").each(function () {
-          var name = $(this).find("td:eq(4)").text();
-          var age = $(this).find("td:eq(6)").text();
-          var intervention = $(this).find("td:eq(8)").text();
+          var name = $(this).find("td:eq(3)").text();
+          var age = $(this).find("td:eq(5)").text();
+          var intervention = $(this).find("td:eq(7)").text();
           if (
             (nameFilter.length === 0 || nameFilter.indexOf(name) !== -1) &&
             (ageFilter.length === 0 || ageFilter.indexOf(age) !== -1) &&
@@ -153,9 +151,9 @@
           var ageOptions = [];
           var interventionOptions = [];
           $("#data-table tbody tr").each(function () {
-            var name = $(this).find("td:eq(4)").text();
-            var age = $(this).find("td:eq(6)").text();
-            var intervention = $(this).find("td:eq(8)").text();
+            var name = $(this).find("td:eq(3)").text();
+            var age = $(this).find("td:eq(5)").text();
+            var intervention = $(this).find("td:eq(7)").text();
             if ($.inArray(name, nameOptions) == -1) nameOptions.push(name);
             if ($.inArray(age, ageOptions) == -1) ageOptions.push(age);
             if ($.inArray(intervention, interventionOptions) == -1)
