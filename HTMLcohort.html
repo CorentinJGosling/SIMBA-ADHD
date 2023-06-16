@@ -122,8 +122,8 @@
         var interventionFilter = $("#filter3").val() || [];
         $("#data-table tbody tr").each(function () {
           var name = $(this).find("td:eq(3)").text();
-          var age = $(this).find("td:eq(5)").text();
-          var intervention = $(this).find("td:eq(7)").text();
+          var age = $(this).find("td:eq(8)").text();
+          var intervention = $(this).find("td:eq(4)").text();
           if (
             (nameFilter.length === 0 || nameFilter.indexOf(name) !== -1) &&
             (ageFilter.length === 0 || ageFilter.indexOf(age) !== -1) &&
@@ -152,8 +152,8 @@
           var interventionOptions = [];
           $("#data-table tbody tr").each(function () {
             var name = $(this).find("td:eq(3)").text();
-            var age = $(this).find("td:eq(5)").text();
-            var intervention = $(this).find("td:eq(7)").text();
+            var age = $(this).find("td:eq(8)").text();
+            var intervention = $(this).find("td:eq(4)").text();
             if ($.inArray(name, nameOptions) == -1) nameOptions.push(name);
             if ($.inArray(age, ageOptions) == -1) ageOptions.push(age);
             if ($.inArray(intervention, interventionOptions) == -1)
