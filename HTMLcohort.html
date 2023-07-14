@@ -43,31 +43,10 @@
     <div class="main">
       <h1>Description of identified cohorts</h1>
       <div class="navgator">
-        <div class="navBTN clicked">Summary</div>
-        <div class="navBTN">Included cohorts</div>
+        <div class="navBTN clicked">Included cohorts</div>
+        <div class="navBTN">Summary</div>
       </div>
-      <div class="cont cont1">
-        <div class="left">
-          <img src="prisma.svg" class="leftIMG" />
-        </div>
-        <div class="right">
-          <div class="sumBOX">
-            <div class="iconTOT"><i class="fas fa-globe"></i></div>
-            <div class="numTOT">
-              A total of 27,099 unique reports identified
-            </div>
-          </div>
-          <div class="sumBOX inc">
-            <div class="iconINC"><i class="far fa-check-square"></i></div>
-            <div class="numINC">Data of 58 cohorts collected</div>
-          </div>
-          <div class="sumBOX exc">
-            <div class="iconEXC"><i class="far fa-times-circle"></i></div>
-            <div class="numEXC">Data of 73 cohorts failed to be collected</div>
-          </div>
-        </div>
-      </div>
-      <div class="cont cont2" style="display: none">
+      <div class="cont cont2">
         <div id="filter-panel">
           <div class="filters">
             <label for="filter1">School-entry system</label><br />
@@ -98,6 +77,27 @@
           </div>
         </div>
         <div id="data-table"></div>
+      </div>
+      <div class="cont cont1" style="display: none">
+        <div class="left">
+          <img src="prisma.svg" class="leftIMG" />
+        </div>
+        <div class="right">
+          <div class="sumBOX">
+            <div class="iconTOT"><i class="fas fa-globe"></i></div>
+            <div class="numTOT">
+              A total of 27,099 unique reports identified
+            </div>
+          </div>
+          <div class="sumBOX inc">
+            <div class="iconINC"><i class="far fa-check-square"></i></div>
+            <div class="numINC">Data of 58 cohorts collected</div>
+          </div>
+          <div class="sumBOX exc">
+            <div class="iconEXC"><i class="far fa-times-circle"></i></div>
+            <div class="numEXC">Data of 73 cohorts failed to be collected</div>
+          </div>
+        </div>
       </div>
     </div>
     <script>
